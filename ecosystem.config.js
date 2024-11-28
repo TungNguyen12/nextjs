@@ -16,7 +16,7 @@ module.exports = {
       path: '/home/ec2-user',
       'pre-deploy-local': '',
       'post-deploy':
-        'source ~/.nvm/nvm.sh && npm install && npm run build pm2 startOrReload ecosystem.config.js --env production',
+        'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 startOrReload ecosystem.config.js --env production',
       'pre-setup': '',
       ssh_options: 'ForwardAgent=yes',
     },
